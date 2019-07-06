@@ -1,20 +1,13 @@
 import _ from 'lodash';
-import printMe from './print.js';
-import './style.css';
+import { landingPage } from './landing-page.js';
+import { mainContent } from './main-content.js';
+import './index.css';
 
-function component() {
-  const element = document.createElement('div');
-  const btn = document.createElement('button');
-
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  element.classList.add('test');
-
-  btn.innerHTML = 'Click me and check the console!';
-  btn.onclick = printMe;
-
-  element.appendChild(btn);
-
-  return element;
+function main() {
+  document.body.appendChild(landingPage());
+  document.body.appendChild(mainContent());
 }
 
-document.body.appendChild(component());
+window.onload = () => {
+  main();
+}

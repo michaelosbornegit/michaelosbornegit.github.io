@@ -14,17 +14,18 @@ module.exports = {
 
   entry: {
     app: './src/index.js',
-    print: './src/print.js'
+    landingPage: './src/landing-page.js',
+    mainContent: './src/main-content.js',
   },
   plugins: [
     new HTMLWebpackPlugin({
-      title: 'Output Management'
+      title: 'Output Management',
     }),
 
     // cleanup everything thats not related to development in the root directory for
     // deploying to github pages. (static files must be in root directory for gh pages)
     new WebpackCleanupPlugin({
-      exclude: ['dev/**', '.gitignore', '.git/**'],
+      exclude: ['dev/**', '.gitignore', '.git/**', 'README.md'],
     }),
   ],
   output: {
