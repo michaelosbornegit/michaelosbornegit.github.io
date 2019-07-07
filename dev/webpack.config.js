@@ -16,6 +16,7 @@ module.exports = {
     app: './src/index.js',
     landingPage: './src/landing-page.js',
     mainContent: './src/main-content.js',
+    navBar: './src/nav-bar.js',
   },
   plugins: [
     new HTMLWebpackPlugin({
