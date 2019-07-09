@@ -1,20 +1,32 @@
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap");
+/* @import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap"); */
 
-.landing-background {
-  background: rgba(57, 134, 134);
-  
+.landing-background {  
   width: 100%;
   height: 100vh;
 }
 
 .landing-container {
+  position: fixed;
+
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-
+  
   width: 100%;
-  height: 100%;
+  height: 100vh;
+
+  transition: 300ms;
+}
+
+.landing-container-show {
+  transform: translate(0px, 100vh);
+  /* opacity: 1; */
+}
+
+.landing-container-hide {
+  transform: translate(0px, -100vh);
+  /* opacity: 1; */
 }
 
 .name-container {
@@ -42,14 +54,5 @@
   margin: 0;
 
   font-family: 'Noto Sans TC', sans-serif;
-  font-size: 2em;
-}
-
-.centered {
-  display: flex;
-  align-items: center;
-}
-
-.invisible {
-  visibility: hidden;
+  font-size: 4rem;
 }

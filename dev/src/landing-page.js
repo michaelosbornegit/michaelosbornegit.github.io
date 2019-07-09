@@ -1,4 +1,5 @@
 import './landing-page.css';
+import { landingPageBackground } from './landing-page-background.js';
 
 // Logic for the fullscreen landing page before the user does anything
 
@@ -8,7 +9,7 @@ function landingPage() {
   container.classList.add('landing-container');
 
   // landing page background
-  const background = document.createElement('div');
+  const background = landingPageBackground();
   background.classList.add('landing-background');
 
   // make full screen TODO make responsive to window resizes

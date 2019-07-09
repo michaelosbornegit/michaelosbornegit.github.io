@@ -6,8 +6,16 @@ import './main-content.css';
 function mainContent() {
   // just text for now
   const placeholder = document.createElement('div');
-  placeholder.classList.add('below-landing');
-  placeholder.innerHTML = 'placeholder text for below the landing page!'
+  placeholder.classList.add('main-content-container');
+
+  placeholder.appendChild(document.createElement('div'));
+  placeholder.appendChild(document.createElement('div'));
+  placeholder.appendChild(document.createElement('div'));
+  placeholder.appendChild(document.createElement('div'));
+  placeholder.appendChild(document.createElement('div'));
+  placeholder.appendChild(document.createElement('div'));
+  placeholder.appendChild(document.createElement('div'));
+  placeholder.appendChild(document.createElement('div'));
 
   return placeholder;
 }

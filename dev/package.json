@@ -1,5 +1,5 @@
 {
-  "name": "webpack-demo",
+  "name": "michael-osborne-webpage",
   "version": "1.0.0",
   "description": "",
   "private": true,
@@ -24,7 +24,6 @@
     "xml-loader": "^1.2.1"
   },
   "dependencies": {
-    "jquery": "^3.4.1",
-    "lodash": "^4.17.11"
+    "three": "^0.106.2"
   }
 }

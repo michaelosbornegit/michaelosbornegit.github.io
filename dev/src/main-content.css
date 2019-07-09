@@ -1,8 +1,31 @@
-.below-landing {
+.main-content-container {
+  position: fixed;
+  top: 10vh;
+
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
 
   width: 100%;
-  height: 100vh;
+  height: 90vh;
+
+  /* transition: all 500ms; */
+
+  background: white;
+}
+
+/* Something that looks like material design cards */
+.main-content-container > div {
+  height: 200px;
+  width: 150px;
+
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: all 300ms;
+  margin: 20px;
+  border-radius: 5px;
+
+  background: blue;
+}
+
+.main-content-container > div:hover {
+  transform: translate(0px, -10px);
 }

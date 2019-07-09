@@ -5,22 +5,19 @@ const WebpackCleanupPlugin = require('webpack-cleanup-plugin');
 module.exports = {
 
   // FOR DEVELOPMENT
-  mode: 'development',
-  devtool: 'inline-source-map',
-  devServer: {
-    contentBase: path.join(__dirname, '../')
-  },
+  mode: 'production',
+  // devtool: 'inline-source-map',
+  // devServer: {
+  //   contentBase: path.join(__dirname, '../')
+  // },
 
 
   entry: {
     app: './src/index.js',
-    landingPage: './src/landing-page.js',
-    mainContent: './src/main-content.js',
-    navBar: './src/nav-bar.js',
   },
   plugins: [
     new HTMLWebpackPlugin({
-      title: 'Output Management',
+      title: 'Michael Osborne',
     }),
 
     // cleanup everything thats not related to development in the root directory for
@@ -42,4 +39,10 @@ module.exports = {
       ]
     }, ]
   },
+  optimization: {
+    splitChunks: {
+      chunks: 'all'
+    },
+    usedExports: true,
+  }
 };
