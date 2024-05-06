@@ -1,0 +1,23 @@
+{
+  "name": "michaelosbornegit.github.io",
+  "version": "0.0.0",
+  "homepage": "https://michaelosbornegit.github.io",
+  "type": "module",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d docs/dist",
+    "dev": "vocs dev --port 3000 --host",
+    "build": "vocs build",
+    "preview": "vocs preview"
+  },
+  "dependencies": {
+    "@types/react": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "typescript": "latest",
+    "vocs": "latest"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  }
+}
