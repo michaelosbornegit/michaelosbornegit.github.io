@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmikeys_world=self.webpackChunkmikeys_world||[]).push([[274],{9659:o=>{o.exports=JSON.parse('{"title":"Long Blog Post","description":"This is the summary of a very long blog post,","frontMatter":{"slug":"long-blog-post","title":"Long Blog Post","authors":"mosborne","tags":["hello","docusaurus"]}}')}}]);
