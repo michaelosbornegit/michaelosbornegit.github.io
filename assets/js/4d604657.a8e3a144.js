@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmikeys_world=self.webpackChunkmikeys_world||[]).push([[235],{734:s=>{s.exports=JSON.parse('{"tags":[{"label":"docusaurus","permalink":"/posts/tags/docusaurus","count":3},{"label":"hello","permalink":"/posts/tags/hello","count":1},{"label":"hola","permalink":"/posts/tags/hola","count":1}]}')}}]);

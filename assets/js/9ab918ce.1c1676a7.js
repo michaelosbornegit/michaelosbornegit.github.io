@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmikeys_world=self.webpackChunkmikeys_world||[]).push([[709],{2072:s=>{s.exports=JSON.parse('{"title":"MDX Blog Post","description":"Blog posts support Docusaurus Markdown features, such as MDX.","frontMatter":{"slug":"mdx-blog-post","title":"MDX Blog Post","authors":"mosborne","tags":["docusaurus"]}}')}}]);
