@@ -1,0 +1,51 @@
+---
+slug: first-post
+title: First Post - An overview of this site
+authors: mosborne
+tags: [software-eng]
+---
+import ReactPlayer from 'react-player/file'
+
+<ReactPlayer playing muted loop url="https://storage.googleapis.com/website-asset-bucket/elf.webm" width="100%" height="auto" />
+Why and how I created this site. 
+
+A journey of a hundred posts starts with a single... post.
+
+<!-- truncate -->
+
+## WHY
+
+I've always wanted a personal site for a couple reasons
+- Others personal blog/project sites have helped me massively and are fascinating to dig through. [One even helped me build this site how I wanted](https://kgajera.com/blog/display-recent-blog-posts-on-home-page-with-docusaurus/). A couple favs
+    - Josh W Comeau's [site](https://www.joshwcomeau.com)
+    - [unoptimal](https://www.unoptimal.com)
+- I want the ability to easily share projects I've worked on when geeking out with my buddies
+- The biggest reason and what finally pushed me over the edge: I want to document my projects and lessons learned for my own future use. Too many times I have made mistakes I have already learned on previous projects, and recently digging through old models trying to remember which tolerances worked best for 3d printing.
+
+## HOW
+
+(Here)[] is the source if you want to poke around
+
+### Docusaurus
+
+This site was created with [Docusaurus](https://docusaurus.io) a pretty awesome static site generator that allows me to create rich content and save a ton of time
+
+I am using some customizations and plugins for docusaurus:
+- Display recent posts on the homepage using a solution from a docusaurus maintainer [here](https://github.com/facebook/docusaurus/issues/4138) which was inspired from [this](https://kgajera.com/blog/display-recent-blog-posts-on-home-page-with-docusaurus/) personal blog
+- [React port](https://github.com/tsukinoko-kun/react-tag-cloud) of [TagCloud.js](https://www.npmjs.com/package/TagCloud)
+- [docusaurus-plugin-image-zoom](https://www.npmjs.com/package/docusaurus-plugin-image-zoom) to use [medium-zoom](https://github.com/francoischalifour/medium-zoom) to be able to click on images and zoom in on them
+
+### Hosting
+
+- I bought the https://mikeys.world domain off porkbun (HIGHLY recommend porkbun, google domains getting killed was one of the best things to ever happen to me) and I'm using Github pages to host my site
+- I'm hosting all of the assets in a google cloud storage bucket
+
+I also used [haikai.app](https://app.haikei.app) to generate the svg line art on the homepage
+
+## Fun random learnings
+- When trying to get a video to autoplay (the elf video) I learned that browsers (or at least chrome) block auto-playing videos unless they have are muted. I had no idea browsers stepped in to protect
+us from the auto-playing max-volume ads of yester-year but I am grateful
+
+Much more to come, but to make this a truly official Mikey project, here's my favorite development testing image
+
+![a cute dog](https://storage.googleapis.com/website-asset-bucket/puppy.jpg)
