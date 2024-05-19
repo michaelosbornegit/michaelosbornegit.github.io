@@ -30,15 +30,19 @@
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="how">HOW<a href="https://mikeys.world/posts/first-post#how" class="hash-link" aria-label="Direct link to HOW" title="Direct link to HOW">​</a></h2>
 <p>This site was created with <a href="https://docusaurus.io/" target="_blank" rel="noopener noreferrer">Docusaurus</a> a pretty awesome static site generator that allows me to create rich content and save a ton of time</p>
-<p>I am using some customizations and plugins:</p>
+<p>I am using some customizations and plugins for docusaurus:</p>
 <ul>
 <li>Display recent posts on the homepage using a solution from a docusaurus maintainer <a href="https://github.com/facebook/docusaurus/issues/4138" target="_blank" rel="noopener noreferrer">here</a> which was inspired from <a href="https://kgajera.com/blog/display-recent-blog-posts-on-home-page-with-docusaurus/" target="_blank" rel="noopener noreferrer">this</a> personal blog</li>
 <li><a href="https://github.com/tsukinoko-kun/react-tag-cloud" target="_blank" rel="noopener noreferrer">React port</a> of <a href="https://www.npmjs.com/package/TagCloud" target="_blank" rel="noopener noreferrer">TagCloud.js</a></li>
 <li><a href="https://www.npmjs.com/package/docusaurus-plugin-image-zoom" target="_blank" rel="noopener noreferrer">docusaurus-plugin-image-zoom</a> to use <a href="https://github.com/francoischalifour/medium-zoom" target="_blank" rel="noopener noreferrer">medium-zoom</a> to be able to click on images and zoom in on them</li>
-<li></li>
 </ul>
-<p>because</p>
-<p>Now, to make this truly official, here's my favorite development testing image</p>
+<p>I also used <a href="https://app.haikei.app/" target="_blank" rel="noopener noreferrer">haikai.app</a> to generate the svg art line on the homepage</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="fun-random-learnings">Fun random learnings<a href="https://mikeys.world/posts/first-post#fun-random-learnings" class="hash-link" aria-label="Direct link to Fun random learnings" title="Direct link to Fun random learnings">​</a></h2>
+<ul>
+<li>When trying to get a video to autoplay (the elf video) I learned that browsers (or at least chrome) block auto-playing videos unless they have are muted. I had no idea browsers stepped in to protect
+us from the auto-playing max-volume ads of yester-year but I am grateful</li>
+</ul>
+<p>Much more to come, but to make this a truly official Mikey project, here's my favorite development testing image</p>
 <p><img decoding="async" loading="lazy" src="https://storage.googleapis.com/website-asset-bucket/puppy.jpg" alt="a cute dog" class="img_ev3q"></p>]]></content>
         <author>
             <name>Michael Osborne</name>
