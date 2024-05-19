@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmikeys_world=self.webpackChunkmikeys_world||[]).push([[235],{734:e=>{e.exports=JSON.parse('{"tags":[{"label":"software-engineering","permalink":"/posts/tags/software-engineering","count":1}]}')}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmikeys_world=self.webpackChunkmikeys_world||[]).push([[709],{2072:s=>{s.exports=JSON.parse('{"title":"First Post - An overview of this site","description":"Why and how I created this site.","frontMatter":{"slug":"first-post","title":"First Post - An overview of this site","authors":"mosborne","tags":["software-eng"]}}')}}]);

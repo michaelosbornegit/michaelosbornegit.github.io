@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://mikeys.world/posts</id>
     <title>Mikeys World Blog</title>
-    <updated>2024-05-18T00:00:00.000Z</updated>
+    <updated>2021-05-18T12:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://mikeys.world/posts"/>
     <subtitle>Mikeys World Blog</subtitle>
@@ -11,7 +11,7 @@
         <title type="html"><![CDATA[First Post - An overview of this site]]></title>
         <id>https://mikeys.world/posts/first-post</id>
         <link href="https://mikeys.world/posts/first-post"/>
-        <updated>2024-05-18T00:00:00.000Z</updated>
+        <updated>2021-05-18T12:00:00.000Z</updated>
         <summary type="html"><![CDATA[Why and how I created this site.]]></summary>
         <content type="html"><![CDATA[<div style="width:100%;height:auto"></div>
 <p>Why and how I created this site.</p>
@@ -21,7 +21,7 @@
 <ul>
 <li>Others personal blog/project sites have helped me massively and are fascinating to dig through. <a href="https://kgajera.com/blog/display-recent-blog-posts-on-home-page-with-docusaurus/" target="_blank" rel="noopener noreferrer">One even helped me build this site how I wanted</a>. A couple favs<!-- -->
 <ul>
-<li>Josh W Comeau's <a href="https://www.joshwcomeau.com/" target="_blank" rel="noopener noreferrer">site</a></li>
+<li><a href="https://www.joshwcomeau.com/" target="_blank" rel="noopener noreferrer">Josh W Comeau</a></li>
 <li><a href="https://www.unoptimal.com/" target="_blank" rel="noopener noreferrer">unoptimal</a></li>
 </ul>
 </li>
@@ -29,7 +29,7 @@
 <li>The biggest reason and what finally pushed me over the edge: I want to document my projects and lessons learned for my own future use. Too many times I have made mistakes I have already learned on previous projects, and recently digging through old models trying to remember which tolerances worked best for 3d printing.</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="how">HOW<a href="https://mikeys.world/posts/first-post#how" class="hash-link" aria-label="Direct link to HOW" title="Direct link to HOW">​</a></h2>
-<p><a href="https://github.com/michaelosbornegit/michaelosbornegit.github.io%5D" target="_blank" rel="noopener noreferrer">Here</a> is the source if you want to poke around or make a site like this yourself.</p>
+<p><a href="https://github.com/michaelosbornegit/michaelosbornegit.github.io" target="_blank" rel="noopener noreferrer">Here</a> is the source if you want to poke around or make a site like this yourself.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="docusaurus">Docusaurus<a href="https://mikeys.world/posts/first-post#docusaurus" class="hash-link" aria-label="Direct link to Docusaurus" title="Direct link to Docusaurus">​</a></h3>
 <p>This site was created with <a href="https://docusaurus.io/" target="_blank" rel="noopener noreferrer">Docusaurus</a> a pretty awesome static site generator that allows me to create rich content and save a ton of time</p>
 <p>I am using some customizations and plugins for docusaurus:</p>
@@ -40,7 +40,7 @@
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="hosting">Hosting<a href="https://mikeys.world/posts/first-post#hosting" class="hash-link" aria-label="Direct link to Hosting" title="Direct link to Hosting">​</a></h3>
 <ul>
-<li>I bought the <a href="https://mikeys.world/" target="_blank" rel="noopener noreferrer">https://mikeys.world</a> domain off porkbun (HIGHLY recommend porkbun, google domains getting killed was one of the best things to ever happen to me) and I'm using Github pages to host my site</li>
+<li>I bought the <a href="https://mikeys.world/" target="_blank" rel="noopener noreferrer">https://mikeys.world</a> domain off porkbun (HIGHLY recommend porkbun, google domains getting killed was a blessing in disguise) and I'm using Github pages to host my site</li>
 <li>I'm hosting all of the assets in a google cloud storage bucket</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="other">Other<a href="https://mikeys.world/posts/first-post#other" class="hash-link" aria-label="Direct link to Other" title="Direct link to Other">​</a></h3>
@@ -58,6 +58,6 @@ us from the auto-playing max-volume ads of yester-year but I am grateful</li>
             <name>Michael Osborne</name>
             <uri>https://github.com/michaelosbornegit</uri>
         </author>
-        <category label="software-eng" term="software-eng"/>
+        <category label="software-engineering" term="software-engineering"/>
     </entry>
 </feed>
