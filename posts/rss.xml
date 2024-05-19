@@ -30,6 +30,8 @@
 <li>The biggest reason and what finally pushed me over the edge: I want to document my projects and lessons learned for my own future use. Too many times I have made mistakes I have already learned on previous projects, and recently digging through old models trying to remember which tolerances worked best for 3d printing.</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="how">HOW<a href="https://mikeys.world/posts/first-post#how" class="hash-link" aria-label="Direct link to HOW" title="Direct link to HOW">​</a></h2>
+<p>(Here)[<a href="https://github.com/michaelosbornegit/michaelosbornegit.github.io" target="_blank" rel="noopener noreferrer">https://github.com/michaelosbornegit/michaelosbornegit.github.io</a>]<!-- --> is the source if you want to poke around or make a site like this yourself.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="docusaurus">Docusaurus<a href="https://mikeys.world/posts/first-post#docusaurus" class="hash-link" aria-label="Direct link to Docusaurus" title="Direct link to Docusaurus">​</a></h3>
 <p>This site was created with <a href="https://docusaurus.io/" target="_blank" rel="noopener noreferrer">Docusaurus</a> a pretty awesome static site generator that allows me to create rich content and save a ton of time</p>
 <p>I am using some customizations and plugins for docusaurus:</p>
 <ul>
@@ -37,7 +39,13 @@
 <li><a href="https://github.com/tsukinoko-kun/react-tag-cloud" target="_blank" rel="noopener noreferrer">React port</a> of <a href="https://www.npmjs.com/package/TagCloud" target="_blank" rel="noopener noreferrer">TagCloud.js</a></li>
 <li><a href="https://www.npmjs.com/package/docusaurus-plugin-image-zoom" target="_blank" rel="noopener noreferrer">docusaurus-plugin-image-zoom</a> to use <a href="https://github.com/francoischalifour/medium-zoom" target="_blank" rel="noopener noreferrer">medium-zoom</a> to be able to click on images and zoom in on them</li>
 </ul>
-<p>I also used <a href="https://app.haikei.app/" target="_blank" rel="noopener noreferrer">haikai.app</a> to generate the svg art line on the homepage</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="hosting">Hosting<a href="https://mikeys.world/posts/first-post#hosting" class="hash-link" aria-label="Direct link to Hosting" title="Direct link to Hosting">​</a></h3>
+<ul>
+<li>I bought the <a href="https://mikeys.world/" target="_blank" rel="noopener noreferrer">https://mikeys.world</a> domain off porkbun (HIGHLY recommend porkbun, google domains getting killed was one of the best things to ever happen to me) and I'm using Github pages to host my site</li>
+<li>I'm hosting all of the assets in a google cloud storage bucket</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="other">Other<a href="https://mikeys.world/posts/first-post#other" class="hash-link" aria-label="Direct link to Other" title="Direct link to Other">​</a></h3>
+<p>I used <a href="https://app.haikei.app/" target="_blank" rel="noopener noreferrer">haikai.app</a> to generate the svg line art on the homepage</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="fun-random-learnings">Fun random learnings<a href="https://mikeys.world/posts/first-post#fun-random-learnings" class="hash-link" aria-label="Direct link to Fun random learnings" title="Direct link to Fun random learnings">​</a></h2>
 <ul>
 <li>When trying to get a video to autoplay (the elf video) I learned that browsers (or at least chrome) block auto-playing videos unless they have are muted. I had no idea browsers stepped in to protect
