@@ -1,13 +1,11 @@
 ---
 slug: first-post
-title: First Post - An overview of this site
+title: 👋 First Post - An overview of this site
 authors: mosborne
-tags: [software-eng]
+tags: [Software Engineering]
+image: https://i.imgur.com/mErPwqL.png
 ---
-import ReactPlayer from 'react-player/file'
-
-<ReactPlayer playing muted loop url="https://storage.googleapis.com/website-asset-bucket/elf.webm" width="100%" height="auto" />
-Why and how I created this site. 
+Why and how I created this site
 
 A journey of a hundred posts starts with a single... post.
 
@@ -17,14 +15,14 @@ A journey of a hundred posts starts with a single... post.
 
 I've always wanted a personal site for a couple reasons
 - Others personal blog/project sites have helped me massively and are fascinating to dig through. [One even helped me build this site how I wanted](https://kgajera.com/blog/display-recent-blog-posts-on-home-page-with-docusaurus/). A couple favs
-    - Josh W Comeau's [site](https://www.joshwcomeau.com)
+    - [Josh W Comeau's](https://www.joshwcomeau.com)
     - [unoptimal](https://www.unoptimal.com)
 - I want the ability to easily share projects I've worked on when geeking out with my buddies
-- The biggest reason and what finally pushed me over the edge: I want to document my projects and lessons learned for my own future use. Too many times I have made mistakes I have already learned on previous projects, and recently digging through old models trying to remember which tolerances worked best for 3d printing.
+- The biggest reason and what finally pushed me over the edge: I want to document my projects and lessons learned for my own future use. Too many times I have made mistakes I have already learned on previous projects, and recently digging through old models trying to remember which file had the best tolerances for 3d printing and frustratingly realizing the only way to figure it out was to create a test print, I knew now was the time to create this.
 
 ## HOW
 
-(Here)[] is the source if you want to poke around
+[Here](https://github.com/michaelosbornegit/michaelosbornegit.github.io) is the source code if you want to poke around
 
 ### Docusaurus
 
@@ -37,14 +35,27 @@ I am using some customizations and plugins for docusaurus:
 
 ### Hosting
 
-- I bought the https://mikeys.world domain off porkbun (HIGHLY recommend porkbun, google domains getting killed was one of the best things to ever happen to me) and I'm using Github pages to host my site
+- I bought the https://mikeys.world domain off [porkbun](https://porkbun.com/) (I HIGHLY recommend porkbun, google domains getting killed was a blessing in disguise) and I'm using Github pages to host my site
 - I'm hosting all of the assets in a google cloud storage bucket
+
+### Other
 
 I also used [haikai.app](https://app.haikei.app) to generate the svg line art on the homepage
 
 ## Fun random learnings
 - When trying to get a video to autoplay (the elf video) I learned that browsers (or at least chrome) block auto-playing videos unless they have are muted. I had no idea browsers stepped in to protect
 us from the auto-playing max-volume ads of yester-year but I am grateful
+
+:::warning
+
+I have since removed this video cause it was distracting, but here it is for posterity:
+
+import ReactPlayer from 'react-player/file'
+
+<ReactPlayer playing muted loop url="https://storage.googleapis.com/website-asset-bucket/elf.webm" width="100%" height="auto" />
+
+
+:::
 
 Much more to come, but to make this a truly official Mikey project, here's my favorite development testing image
 

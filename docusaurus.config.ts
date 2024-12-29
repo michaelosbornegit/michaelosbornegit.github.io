@@ -5,7 +5,7 @@ import 'dotenv/config';
 
 const config: Config = {
   title: 'Mikeys World',
-  tagline: 'Software Engineering, nerding',
+  tagline: 'software engineering nerd',
   favicon: 'img/favicon.svg',
 
   // Set the production url of your site here
@@ -38,10 +38,6 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: false,
         theme: {
@@ -66,6 +62,7 @@ const config: Config = {
       },
       items: [
         { to: '/posts', label: 'Posts', position: 'left' },
+        { to: '/about', label: 'About', position: 'left' },
       ],
     },
     footer: {
@@ -107,7 +104,10 @@ const config: Config = {
         dark: 'rgba(0, 0, 0, 30%)'
       },
       config: {
-        // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
+        container: {
+          // Make sure the zoom doesn't show under the navbar
+          top: 60
+        }
       }
     },
     prism: {

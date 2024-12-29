@@ -12,10 +12,9 @@ function RecentBlogPostCard({ recentPost }) {
   const { Preview, metadata } = recentPost;
   
   return (
-    <article className='hover-opacity' style={{ padding: 30, width: '300px', flexGrow: '1', maxWidth: '500px', cursor: 'pointer' }}
+    <article style={{ padding: 30, width: '300px', flexGrow: '1', maxWidth: '500px', cursor: 'pointer', border: 'grey 1px solid', margin: '10px', borderRadius: '10px' }}
     onClick={() => window.location.href = `/posts/${metadata.frontMatter.slug}`}>
       <h2>{metadata.title}</h2>
-      <hr />
       <Preview />
     </article>
   );
@@ -41,7 +40,7 @@ export default function Home({ homePagePostsMetadata, recentPosts }) {
         <div style={{ width: '100%', display: 'flex', alignItems: 'center', flexDirection: 'column', height: '70%' }}>
           <TagCloud
             options={{ radius: 200 }}
-            onClick={(tag: string, ev: MouseEvent) => { window.location.href = `/posts/tags/${tag}` }}
+            onClick={(tag: string, ev: MouseEvent) => { window.location.href = `/posts/tags/${tag.replaceAll(' ', '-').toLowerCase()}` }}
             style={{ marginTop: '-20px' }}
           >
             {Array.from(new Set(recentPosts.flatMap((post) => {

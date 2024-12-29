@@ -1,0 +1,193 @@
+---
+slug: home-assistant
+title: 🏠 You (might) NEED Home Assistant
+authors: mosborne
+tags: [Software Engineering, Home Automation]
+---
+
+You probably just don't know it yet.
+
+What I use [Home Assistant](https://www.home-assistant.io/) for. Hint: you can use it for way more than just home automation. By the end of this article you will hopefully be convinced to give it a try.
+
+<!-- truncate -->
+
+## WHY
+
+In case you don't know, [Home Assistant](https://www.home-assistant.io/) is software that allows you to automate and track things in you life far easier, free-er, and simpler (low/no code) than other methods. If you're like me, I had mutliple apps on my phone, some paid, to automate or track different things like how much water I drink, control the TV, and multiple "Smart Home" device apps like Philips Hue. 
+
+Home Assistants primary purpose is for home automation. Stuff like turn on lights after 6pm, turn on the heater when it gets cold, etc. But, the generic tools they created for if-this-then-that home automating and the amount of integrations supported officially and unofficially (through [Home Assistant Community Store or HACS](https://www.hacs.xyz/)) create a wide range possibilities.
+
+I originally got into Home Assistant just to see if I could turn on and off smart lights, now I use it to help track and visualize personal and health goals and to reduce the amount of things I need to keep track of or think about every day.
+
+:::warning There is a catch
+
+You need a way to host it at home. Home Assistant sells boxes (i.e. [Home Assistant Green](https://www.home-assistant.io/green)) but they're a little pricey, I would recommend just going with a raspberry pi 5 (then you can host multiple things) or repurposing an old computer/laptop into a server computer running something like [Unraid](https://unraid.net/)
+
+I am running Home Assistant on my Unraid server computer.
+
+:::
+
+## WHAT
+
+In no particular order, this is a list of what I have used Home Assistant for, some of these warrant (and may get) full write-ups of their own
+
+### Home Presence Tracking
+
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+<figure style={{ width: '100%' }}>
+<img src="https://storage.googleapis.com/website-asset-bucket/ha-home-presence-history.png" alt="home presence tracking dashboard" />
+<figcaption style={{ textAlign: 'center' }}>*Home presence tracking dashboard*</figcaption>
+</figure>
+</div>
+
+Turning off our phones MAC address randomization on the home wifi network allows me to track when a phone is or isn't connected to the network
+
+This data can be used for all kinds of things:
+- If I'm out, knowing my girlfriend got home safely
+- Make actionable goals to leave the apartment more
+- Provide a reference point if there are any events we're trying to figure out the time of, this has helped so many times in random situations like knowing how long somethings been in the oven we forgot to put the timer on because we know roughly when someone got home etc.
+
+### TV Control
+
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+<figure style={{ width: '50%' }}>
+<img src="https://storage.googleapis.com/website-asset-bucket/ha-tv-control.jpeg" alt="tv control dashboard" />
+<figcaption style={{ textAlign: 'center' }}>*TV Control Widget*</figcaption>
+</figure>
+</div>
+
+My dog ate my TV remote, Home Assistant automatically picks up smart TVs on the network and provides enough controls to get by.
+
+### Dog Potty Training and Feeding Tracking
+
+<div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
+<figure style={{ width: '30%' }}>
+<img src="https://storage.googleapis.com/website-asset-bucket/ha-dog-tracker.png" alt="dog dashboard" />
+<figcaption style={{ textAlign: 'center' }}>*Dog Dashboard*</figcaption>
+</figure>
+<figure style={{ width: '30%' }}>
+<img src="https://storage.googleapis.com/website-asset-bucket/door-dog-tracker-device.jpg" alt="doorway dog tracker device" />
+<figcaption style={{ textAlign: 'center' }}>*Doorway dog tracker device*</figcaption>
+</figure>
+<figure style={{ width: '30%' }}>
+<img src="https://storage.googleapis.com/website-asset-bucket/my-desk-dog-tracker-device.jpg" alt="my desk dog tracker device" />
+<figcaption style={{ textAlign: 'center' }}>*My desk*</figcaption>
+</figure>
+<figure style={{ width: '30%' }}>
+<img src="https://storage.googleapis.com/website-asset-bucket/katrina-desk-dog-tracker-device.jpg" alt="girlfriends desk dog tracker device" />
+<figcaption style={{ textAlign: 'center' }}>*Girlfriend's desk*</figcaption>
+</figure>
+</div>
+
+We got a ~1 year old dog that wasn't potty trained and we needed to make sure we took her out every 2-3 hours. Managing this on home assistant was way easier than building a custom app, especially with the Home Assistant mobile app which makes it easy to click the buttons.
+
+I have this set up to play a sound on all google home devices 2 hours after we took her out to remind us to take her out again. I also have the doorway device set up to easily press buttons and reset the timers when you get in from taking her out.
+
+All the devices are SSD1306 displays hooked up to a Raspberry Pi Pico W running micropython.
+
+This will definitely get a full write-up because it has been the most useful.
+
+### Energy Drink Tracking
+
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+<figure style={{ width: '50%' }}>
+<img src="https://storage.googleapis.com/website-asset-bucket/ha-energy-drink-tracker.png" alt="energy drink dashboard" />
+<figcaption style={{ textAlign: 'center' }}>*Energy drink dashboard*</figcaption>
+</figure>
+</div>
+
+I used Home Assistant to get myself to stop drinking energy drinks and to switch over to caffeine pills, I found forcing myself to simply press this button every time I had an energy drink had a big effect on making me change my behaviour and stop having them as much.
+
+### Exercise Tracking
+
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+<figure style={{ width: '50%' }}>
+<img src="https://storage.googleapis.com/website-asset-bucket/ha-exercise.png" alt="exercise dashboard" />
+<figcaption style={{ textAlign: 'center' }}>*Exercise dashboard*</figcaption>
+</figure>
+</div>
+
+Similar to energy drink tracking, I found entering in the number of these I do and knowing its getting recorded historically to have a positive effect. I also can easily see if I've been slacking.
+
+### Room Temp, CO2 level, and Humidity
+
+<div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
+<figure style={{ width: '30%' }}>
+<img src="https://storage.googleapis.com/website-asset-bucket/ha-mike-room-temp.png" alt="room temp dashboard" />
+<figcaption style={{ textAlign: 'center' }}>*Room temp/CO2/humidity dashboard*</figcaption>
+</figure>
+<figure style={{ width: '30%' }}>
+<img src="https://storage.googleapis.com/website-asset-bucket/ha-mike-room-temp-device.jpg" alt="room temp dashboard" />
+<figcaption style={{ textAlign: 'center' }}>*Room temp/CO2/humidity device*</figcaption>
+</figure>
+</div>
+
+I use a SCD41 hooked up to a Raspberry Pi Pico W to measure CO2 levels in my poorly ventilated office, and it also reads temperature and humidity and uses Home Assistants API to send the sensor readings. I read an article during COVID that said when working from home CO2 levels can get very high and can lead to feeling sluggish or tired so I try to keep it low with fans or by moving around the apartment when its high.
+
+### Historical Weather Tracking
+
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+<figure style={{ width: '50%' }}>
+<img src="https://storage.googleapis.com/website-asset-bucket/ha-historical-weather-map-tracking.png" alt="historical weather tracking" />
+<figcaption style={{ textAlign: 'center' }}>*Historical weather dashboard*</figcaption>
+</figure>
+</div>
+
+I use the OpenWeatherMap integration to record historical weather. I find this useful to see how much rainfall there was, what the wind speed is like, and what the temperature is (and if its trending up or down) to prepare before going out to run or bike. 
+
+### Health Tracking
+
+<div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
+<figure style={{ width: '30%' }}>
+<img src="https://storage.googleapis.com/website-asset-bucket/ha-garmin-connect.png" alt="garmin connect dashboard" />
+<figcaption style={{ textAlign: 'center' }}>*Garmin connect dashboard*</figcaption>
+</figure>
+<figure style={{ width: '30%' }}>
+<img src="https://storage.googleapis.com/website-asset-bucket/ha-grafana-health-dashboard.png" alt="grafana health dashboard" />
+<figcaption style={{ textAlign: 'center' }}>*Grafana health dashboard*</figcaption>
+</figure>
+</div>
+
+Using the Garmin connect integration (from HACS) and the Fitbit integration for my Aria smart scale, all my activity is automatically recorded. I have Home Assistant hooked up to Influx DB and then run Grafana to make powerful dashboards from the data, like the above health dashboard to see how my weight, calorie burn, and minutes active is trending.
+
+### 3D Printer tracking
+
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+<figure style={{ width: '50%' }}>
+<img src="https://storage.googleapis.com/website-asset-bucket/ha-3d-printer-dashboard.png" alt="3d printer dashboard" />
+<figcaption style={{ textAlign: 'center' }}>*3D printer dashboard*</figcaption>
+</figure>
+</div>
+
+I was previously using a different app to remotely view and control my 2 MK3S+ 3D printers, but with Home Assistant I can do all of that and more with the OctoPrint integration.
+
+## HOW
+
+There a plenty of good guides online to set up these types of automations and tracking, so for how I did this I'm going to focus on the higher level concepts to point you in the right direction to find guides.
+
+Some notes on the main things I use to drive everything and the lessons learned:
+
+### Helpers and Automations
+
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+<figure style={{ width: '50%' }}>
+<img src="https://storage.googleapis.com/website-asset-bucket/ha-helpers.png" alt="helpers view" />
+<figcaption style={{ textAlign: 'center' }}>*My helpers*</figcaption>
+</figure>
+</div>
+
+The 2 mains things I use are helpers under `Settings -> Devices & services -> Helpers` Automations under `Settings -> Automations & scenes`. The helpers `Counter` and `Input button` are the 2 main ones, and then you can set up an Automation to increase a Counter when an Input button is pressed, or increase a counter when something else happens.
+
+You can also, through the Home Assistant API, change and get the value of Helpers, which allows you to use Home Assistant like an application backend that already has robust visualization support built in.
+
+### HACS
+
+Home Assistant has a ton of official integrations, but to shove even more data in and track it I highly recommend installing [Home Assistant Community Store or HACS](https://www.hacs.xyz/) which enables browsing and installing user-made integrations.
+
+### InfluxDB and Grafana
+
+Home Assistant, by default, only stores 10 days of historical data for performance reasons. For this reason, I think InfluxDB (and the Home Assistant InfluxDB add-on to easily ship data to it) is a must. Once you have data flowing into InfluxDB, you can use something like Grafana to build longer term visualizations. Thats why I built my health dashboard in Grafana, because I want a longer term view of my health journey. Both InfluxDB and Grafana are available as convenient docker containers to easily set up.
+
+## Conclusion
+
+If I convinced you and you try Home Assistant, or I inspired you to do something cool, let me know!
