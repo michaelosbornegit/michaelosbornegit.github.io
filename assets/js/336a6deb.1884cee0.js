@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmikeys_world=self.webpackChunkmikeys_world||[]).push([[133],{910:e=>{e.exports=JSON.parse('{"tags":[{"label":"Software Engineering","permalink":"/posts/tags/software-engineering","count":2},{"label":"Home Automation","permalink":"/posts/tags/home-automation","count":1}]}')}}]);

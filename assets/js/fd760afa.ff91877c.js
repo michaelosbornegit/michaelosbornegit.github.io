@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmikeys_world=self.webpackChunkmikeys_world||[]).push([[40],{2715:e=>{e.exports=JSON.parse('{"authors":[{"name":"Michael Osborne","title":"Software Engineer","url":"https://github.com/michaelosbornegit","imageURL":"https://github.com/michaelosbornegit.png","key":"mosborne","page":null,"count":2}]}')}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmikeys_world=self.webpackChunkmikeys_world||[]).push([[851],{5437:s=>{s.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"First Post - An overview of this site","permalink":"/posts/first-post","unlisted":false}]}')}}]);

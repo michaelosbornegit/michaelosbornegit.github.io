@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmikeys_world=self.webpackChunkmikeys_world||[]).push([[759],{5699:s=>{s.exports=JSON.parse('{"blogTitle":"Posts","blogDescription":"My Posts","totalPosts":2,"totalRecentPosts":2}')}}]);
