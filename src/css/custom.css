@@ -58,17 +58,20 @@
   }
 }
 
-.blog-list-page h2[class*="title"]
+.blog-list-page h2[class*="title"],
+.blog-tags-post-list-page h2[class*="title"]
 {
   font-size: 2rem;
 }
 
-.blog-list-page h2[class*="title"] a
+.blog-list-page h2[class*="title"] a,
+.blog-tags-post-list-page h2[class*="title"] a
 {
   color: var(--ifm-font-color-base);
 }
 
-.blog-list-page span[class*="authorName"]
+.blog-list-page span[class*="authorName"],
+.blog-tags-post-list-page span[class*="authorName"]
 {
   font-size: 1rem;
   color: var(--ifm-font-color-base);
