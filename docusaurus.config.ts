@@ -89,7 +89,7 @@ const config: Config = {
               href: 'https://www.linkedin.com/in/michael-osborne-cs/',
             },
             {
-              label: 'Discord - \nUsername: bigmike2biggermike',
+              label: 'Discord - Username: bigmike2biggermike',
               href: 'https://discord.com',
             }
           ],
