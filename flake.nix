@@ -1,6 +1,6 @@
 {
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-24.05";
+    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
   };
 
   outputs = { self, nixpkgs, ... }:
@@ -10,11 +10,10 @@
       devShellForSystem = system: let
         pkgs = import nixpkgs { 
           inherit system; 
-          # config.allowUnfree = true; # Needed for terraform and other "unfree" packages
         };
       in pkgs.mkShell {
         buildInputs = with pkgs; [
-          nodejs_22
+          nodejs
         ];
       };
     in

@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 import 'dotenv/config';
 
 const config: Config = {
-  title: 'Mikeys World',
+  title: 'Mikey\'s World',
   tagline: 'software engineering nerd',
   favicon: 'img/favicon.svg',
 
@@ -36,9 +36,6 @@ const config: Config = {
     [
       'classic',
       {
-        docs: {
-          sidebarPath: './sidebars.ts',
-        },
         blog: false,
         theme: {
           customCss: './src/css/custom.css',
@@ -55,46 +52,31 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/social-banner.png',
     navbar: {
-      title: 'Mikeys World',
+      title: 'Mikey\'s World',
       logo: {
-        alt: 'Mikeys World Logo',
+        alt: 'Mikey\'s World Logo',
         src: 'img/favicon.svg',
       },
-      items: [
-        { to: '/posts', label: 'Posts', position: 'left' },
-        { to: '/about', label: 'About', position: 'left' },
-      ],
     },
     footer: {
-      style: 'light',
+
+
       links: [
         {
-          title: 'Collections',
-          items: [
-            {
-              label: 'Posts',
-              to: '/posts',
-            },
-          ],
+          label: 'Github',
+          href: 'https://github.com/michaelosbornegit',
         },
         {
-          title: 'Links',
-          items: [
-            {
-              label: 'Github',
-              href: 'https://github.com/michaelosbornegit',
-            },
-            {
-              label: 'Linkedin',
-              href: 'https://www.linkedin.com/in/michael-osborne-cs/',
-            },
-            {
-              label: 'Discord - Username: bigmike2biggermike',
-              href: 'https://discord.com',
-            }
-          ],
+          label: 'Linkedin',
+          href: 'https://www.linkedin.com/in/michael-osborne-cs/',
         },
+        {
+          label: 'Discord - Username: bigmike2biggermike',
+          href: 'https://discord.com',
+        }
       ],
+
+
       copyright: `Built with Docusaurus.`,
     },
     zoom: {
@@ -127,6 +109,7 @@ const config: Config = {
         path: './posts',
         blogTitle: 'Posts',
         blogDescription: 'My Posts',
+        blogSidebarCount: 0
       },
     ],
   ],
