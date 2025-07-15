@@ -10,10 +10,12 @@
       devShellForSystem = system: let
         pkgs = import nixpkgs { 
           inherit system; 
+          # config.allowUnfree = true;
         };
       in pkgs.mkShell {
         buildInputs = with pkgs; [
           nodejs
+          pnpm
         ];
       };
     in

@@ -1,54 +1,52 @@
 {
-  "name": "mikeys-world",
-  "version": "0.0.0",
-  "private": true,
-  "scripts": {
-    "docusaurus": "docusaurus",
-    "start": "NODE_ENV=dev && docusaurus start",
-    "build": "docusaurus build",
-    "swizzle": "docusaurus swizzle",
-    "deploy": "dotenv -- docusaurus deploy",
-    "clear": "docusaurus clear",
-    "serve": "docusaurus serve",
-    "write-translations": "docusaurus write-translations",
-    "write-heading-ids": "docusaurus write-heading-ids",
-    "typecheck": "tsc"
-  },
-  "dependencies": {
-    "@docusaurus/core": "^3.8.0",
-    "@docusaurus/plugin-google-gtag": "^3.8.0",
-    "@docusaurus/preset-classic": "^3.8.0",
-    "@frank-mayer/react-tag-cloud": "^1.2.1",
-    "@mdx-js/react": "^3.1.0",
-    "clsx": "^2.1.1",
-    "docusaurus-plugin-image-zoom": "^2.0.0",
-    "dotenv": "^16.5.0",
-    "medium-zoom": "^1.1.0",
-    "prism-react-renderer": "^2.4.1",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-player": "^2.16.0"
-  },
-  "devDependencies": {
-    "@docusaurus/module-type-aliases": "^3.8.0",
-    "@docusaurus/tsconfig": "^3.8.0",
-    "@docusaurus/types": "^3.8.0",
-    "dotenv-cli": "^7.4.4",
-    "typescript": "~5.2.2"
-  },
-  "browserslist": {
-    "production": [
-      ">0.5%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 3 chrome version",
-      "last 3 firefox version",
-      "last 5 safari version"
-    ]
-  },
-  "engines": {
-    "node": ">=18.0"
-  }
+	"name": "my-docusaurus-app",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"docusaurus": "docusaurus",
+		"start": "docusaurus start",
+		"build": "docusaurus build",
+		"swizzle": "docusaurus swizzle",
+		"deploy": "pnpm run build && wrangler deploy",
+		"clear": "docusaurus clear",
+		"serve": "docusaurus serve",
+		"write-translations": "docusaurus write-translations",
+		"write-heading-ids": "docusaurus write-heading-ids",
+		"typecheck": "tsc",
+		"preview": "pnpm run build && wrangler dev"
+	},
+	"dependencies": {
+		"@docusaurus/core": "3.8.1",
+		"@docusaurus/preset-classic": "3.8.1",
+		"@frank-mayer/react-tag-cloud": "^1.2.1",
+		"@mdx-js/react": "^3.0.0",
+		"clsx": "^2.0.0",
+		"docusaurus-plugin-image-zoom": "^3.0.1",
+		"prism-react-renderer": "^2.3.0",
+		"react": "^19.0.0",
+		"react-dom": "^19.0.0",
+		"react-player": "^3.2.0"
+	},
+	"devDependencies": {
+		"@docusaurus/module-type-aliases": "3.8.1",
+		"@docusaurus/tsconfig": "3.8.1",
+		"@docusaurus/types": "3.8.1",
+		"typescript": "~5.6.2",
+		"wrangler": "^4.24.3"
+	},
+	"browserslist": {
+		"production": [
+			">0.5%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 3 chrome version",
+			"last 3 firefox version",
+			"last 5 safari version"
+		]
+	},
+	"engines": {
+		"node": ">=18.0"
+	}
 }
